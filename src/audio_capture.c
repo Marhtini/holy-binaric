@@ -20,11 +20,6 @@ snd_pcm_t* init_mic(){
 	}
 
 	if((err = snd_pcm_hw_params_malloc(&hw_params)) < 0){
-		fprintf(stderr, "can't allocate hardware param struct (%s)\n", snd_stderror(err));
-		exit(1);
-	}
-
-	if((err = snd_pcm_hw_params_malloc(&hw_params)) < 0){
 		fprintf(stderr, "unable to allocate memory for the param struct (%s)\n", snd_stderror(err));
 		exit(1);
 	}  // Allocate memory for hw_params

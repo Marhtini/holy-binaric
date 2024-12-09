@@ -1,9 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "audio_capture.h"
 #include <alsa/asoundlib.h>
-
-#define BUFFER_SIZE 128           // Number of frames per buffer
-#define SILENCE_THRESHOLD 500     // Adjust this value based on your mic sensitivity
 
 snd_pcm_t* init_mic(){
 	

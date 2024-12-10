@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <alsa/asoundlib.h>
-#include "audio_capture.h"
-#include "wav_format.h"
+#include "include/audio_capture.h"
+#include "include/wav_format.h"
 
 #define BUFFER_SIZE 128
 #define SILENCE_THRESHOLD 500 // Threshold for silence detection

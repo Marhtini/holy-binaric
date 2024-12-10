@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "wav_format.h"  // Include the header file that contains the wav_header_t struct
+#include "include/wav_format.h"  // Include the header file that contains the wav_header_t struct
 
 // Function to write the WAV header
 void write_wav_header(FILE *file, unsigned int data_size) {

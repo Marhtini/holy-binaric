@@ -4,7 +4,6 @@
 #include "audio_capture.h"
 #include "wav_format.h"
 
-#define BUFFER_SIZE 128
 #define SILENCE_THRESHOLD 500 // Threshold for silence detection
 #define GRACE_PERIOD 3       // Grace period in seconds after silence is detected
 

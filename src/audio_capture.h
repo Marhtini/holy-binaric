@@ -8,6 +8,6 @@
 #define SILENCE_THRESHOLD 500
 
 snd_pcm_t* init_mic();
-int capture_audio(snd_pcm_t* capture_handle);
+int capture_audio_to_wav(snd_pcm_t *capture_handle, const char *filename);
 
 #endif // AUDIO_CAPTURE_H

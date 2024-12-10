@@ -4,7 +4,8 @@
 
 // Simple function to simulate the sending of a "short beep" or "long beep"
 void send_beep(int duration_ms) {
-    // TODO: Speaker API to generate beeps
+
+    // TODO: Audio output using wiringPi or pigpio once I get my hands on the hardware :)
     usleep(duration_ms * 1000); // Simulate the beep duration in milliseconds
 }
 
@@ -12,7 +13,7 @@ void encode_and_transmit_audio(const char *audio_filename) {
     
     unsigned char byte;
 
-    FILE *audio_file = fopen(audio_filename, "rb");
+    FILE* audio_file = fopen(audio_filename, "rb");
     if (!audio_file) {
         fprintf(stderr, "Failed to open audio file\n");
         return;

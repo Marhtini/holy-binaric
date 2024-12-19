@@ -31,9 +31,6 @@ int main(){
         deviceInfo = Pa_GetDeviceInfo(i);
         printf("Device %d:\n", i);
         printf(" name: %s\n", deviceInfo->name);
-        printf(" name: %s\n", deviceInfo->name);
-        printf(" name: %s\n", deviceInfo->name);
-        printf(" name: %s\n", deviceInfo->name);
     }
 
     p_err = Pa_Terminate();

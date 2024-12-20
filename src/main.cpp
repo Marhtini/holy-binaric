@@ -30,7 +30,10 @@ int main(){
     for (int i = 0; i < numDevices; i++){
         deviceInfo = Pa_GetDeviceInfo(i);
         printf("Device %d:\n", i);
-        printf(" name: %s\n", deviceInfo->name);
+        printf("Name: %s\n", deviceInfo->name);
+        printf("Max Input Channels: %s\n", deviceInfo->maxInputChannels);
+        printf("Max Output Channels: %s\n", deviceInfo->maxOutputChannels);
+        printf("Default Sample Rate: %s\n", deviceInfo->defaultSampleRate);
     }
 
     p_err = Pa_Terminate();
